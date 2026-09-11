@@ -10,6 +10,11 @@
 - `skills/module-registry/`：我方模块文档维护。
 - `skills/competitor-research/`：竞品结论与证据记录。
 - `skills/sync-agent-rules/`：检查和同步以上内容，包括同步器自身。
+- `skills/grill-me/`：分轮追问方案，合并旧 `grilling` 正文。
+- `skills/handoff/`：会话交接，共用正文加 Codex 操作参考。
+- `skills/unity-mcp/`、`skills/unity-scene-rpc/`：按当前服务能力操作 Unity。
+- `skills/unity-compile-check/`、`skills/unity-console/`：编译核对与日志定位。
+- [个人 Skill 清单](rules/skill-catalog.md)：来源、合并结果及外部包；共 9 个共享 Skill。
 - `manifest.json`：明确的分发文件清单；清单外文件不安装。
 
 项目的 TEAM_RULES、架构、竞品结论、账号配置和日志仍由项目维护。本仓库不收集账号凭据或其他工具的内置 Skill。项目定制写在项目规则中，不直接改安装副本。
@@ -45,4 +50,4 @@ python skills/sync-agent-rules/scripts/sync_rules.py --source . --project D:/pat
 - 清单移除的文件保留并报告，不静默删除。同步不会自动提交、推送、执行来自共享仓库的其他脚本或启动业务工具。
 - 网络、认证或校验失败保留原安装；不会把没有完成的同步记录为成功。
 
-源仓库变更经测试后再提交和推送；各项目明确同步时才采用新版本。先维护当前这几项，实际有复用需求再扩充。
+源仓库变更经测试后再提交和推送；各项目明确同步时才采用新版本。同步只分发说明和清单内资源，不安装 MCP 服务或第三方 CLI。账号下已有同名 Skill 不会被覆盖；实际接入时核对冲突，避免新旧正文同时影响任务。

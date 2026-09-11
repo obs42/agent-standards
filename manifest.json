@@ -6,6 +6,14 @@
     "skills/module-registry/SKILL.md": ".agents/skills/module-registry/SKILL.md",
     "skills/competitor-research/SKILL.md": ".agents/skills/competitor-research/SKILL.md",
     "skills/sync-agent-rules/SKILL.md": ".agents/skills/sync-agent-rules/SKILL.md",
-    "skills/sync-agent-rules/scripts/sync_rules.py": ".agents/skills/sync-agent-rules/scripts/sync_rules.py"
+    "skills/sync-agent-rules/scripts/sync_rules.py": ".agents/skills/sync-agent-rules/scripts/sync_rules.py",
+    "skills/grill-me/SKILL.md": ".agents/skills/grill-me/SKILL.md",
+    "skills/handoff/SKILL.md": ".agents/skills/handoff/SKILL.md",
+    "skills/unity-compile-check/SKILL.md": ".agents/skills/unity-compile-check/SKILL.md",
+    "skills/unity-console/SKILL.md": ".agents/skills/unity-console/SKILL.md",
+    "skills/unity-scene-rpc/SKILL.md": ".agents/skills/unity-scene-rpc/SKILL.md",
+    "skills/unity-mcp/SKILL.md": ".agents/skills/unity-mcp/SKILL.md",
+    "skills/handoff/references/codex.md": ".agents/skills/handoff/references/codex.md",
+    "rules/skill-catalog.md": ".agents/shared/skill-catalog.md"
   }
 }
