@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "bundle": "agent-standards",
+  "files": {
+    "rules/development.md": ".agents/shared/development.md",
+    "skills/module-registry/SKILL.md": ".agents/skills/module-registry/SKILL.md",
+    "skills/competitor-research/SKILL.md": ".agents/skills/competitor-research/SKILL.md",
+    "skills/sync-agent-rules/SKILL.md": ".agents/skills/sync-agent-rules/SKILL.md",
+    "skills/sync-agent-rules/scripts/sync_rules.py": ".agents/skills/sync-agent-rules/scripts/sync_rules.py"
+  }
+}
