@@ -2,7 +2,7 @@
 
 统一维护个人通用 Skill 与开发约定；项目使用本地、带来源记录的副本。日常任务不依赖网络，明确要求同步时才获取更新。
 
-共享仓库：[obs42/agent-standards](https://github.com/obs42/agent-standards)。这是私有仓库，其他电脑首次使用需要 GitHub 账号的读取权限。网页登录和电脑 Git 登录分别进行一次；不把密码或令牌复制到项目中。
+共享仓库：[obs42/agent-standards](https://github.com/obs42/agent-standards)。这是公开仓库，查看和通过 HTTPS 下载无需 GitHub 登录或邀请；提交、推送仍需要写入权限。不把密码或令牌复制到项目中。
 
 ## 内容
 
@@ -21,7 +21,7 @@
 
 ## 第一次接入
 
-需要 Python 3.10+；远程同步还需要 Git 及仓库读取权限。先取得本仓库本地副本，阅读 Skill 与脚本，然后执行：
+需要 Python 3.10+；远程同步还需要 Git 和网络访问。先取得本仓库本地副本，阅读 Skill 与脚本，然后执行：
 
 ```powershell
 python skills/sync-agent-rules/scripts/sync_rules.py --source . --project D:/path/to/project --check

@@ -7,7 +7,7 @@ description: 用户要求同步、更新或安装共享 Agent 规则和 Skill �
 
 在当前任务的项目执行，先读取项目入口及 `.agents/shared/lock.json`（存在时），确认目标项目、共享来源与跟踪版本。不要把本 Skill 所在项目误作用户指定的其他项目。
 
-本套共享源是 `https://github.com/obs42/agent-standards.git`（私有仓库），首次接入默认使用此地址；已有 lock 时沿用项目记录，用户明确指定其他来源时再切换。电脑需要具备该私有仓库的 Git 读取权限；网页登录不等于 Git 已登录。不把令牌写入 URL、Skill 或 lock，远程读取使用 Git 已配置的认证。
+本套共享源是 `https://github.com/obs42/agent-standards.git`（公开仓库），首次接入默认使用此地址；通过 HTTPS 下载无需 GitHub 登录。已有 lock 时沿用项目记录，用户明确指定其他来源时再切换。若指定私有来源，使用 Git 已配置的认证；网页登录不等于 Git 已登录。不把令牌写入 URL、Skill 或 lock。
 
 使用本 Skill 自带脚本，路径为 `scripts/sync_rules.py`：
 
